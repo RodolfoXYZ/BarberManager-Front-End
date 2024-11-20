@@ -1,3 +1,4 @@
+import 'package:barbershop_app/views/LoginPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }
@@ -38,7 +39,7 @@ class HomePage extends StatelessWidget {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'assets/imagem.jpeg'), // Caminho atualizado para a nova imagem
+                'assets/logo.png'), // Caminho atualizado para a nova imagem
             fit: BoxFit.cover, // A imagem vai cobrir toda a tela
             colorFilter: ColorFilter.mode(Colors.blue.withOpacity(0.4),
                 BlendMode.darken), // Cor azul com opacidade ajustada
