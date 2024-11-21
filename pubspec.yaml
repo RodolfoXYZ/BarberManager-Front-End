@@ -23,4 +23,10 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+    - assets/imgfundo.png
+    - assets/adomicilio.png
+    - assets/degrade.png
+    - assets/sobrancelha.png
+    - assets/barba.png
+
+
