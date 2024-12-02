@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2024/12/02-14:08:59.678 48e8 Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.5b85dce4\flutter_tools_chrome_device.9c86c230\Default\Site Characteristics Database/MANIFEST-000001
 2024/12/02-14:08:59.678 48e8 Recovering log #10
 2024/12/02-14:08:59.679 48e8 Reusing old log C:\Users\Lucas\AppData\Local\Temp\flutter_tools.5b85dce4\flutter_tools_chrome_device.9c86c230\Default\Site Characteristics Database/000010.log 
@@ -5,3 +6,9 @@
 2024/12/02-14:08:59.679 48e8 Delete type=2 #4
 2024/12/02-14:08:59.679 48e8 Delete type=2 #6
 2024/12/02-14:08:59.679 48e8 Delete type=0 #6
+=======
+2024/12/02-15:16:59.269 298c Reusing MANIFEST C:\Users\monte\AppData\Local\Temp\flutter_tools.5c31fc56\flutter_tools_chrome_device.c493297d\Default\Site Characteristics Database/MANIFEST-000001
+2024/12/02-15:16:59.272 298c Recovering log #6
+2024/12/02-15:16:59.273 298c Reusing old log C:\Users\monte\AppData\Local\Temp\flutter_tools.5c31fc56\flutter_tools_chrome_device.c493297d\Default\Site Characteristics Database/000006.log 
+2024/12/02-15:16:59.275 298c Delete type=0 #3
+>>>>>>> barber_selection_page

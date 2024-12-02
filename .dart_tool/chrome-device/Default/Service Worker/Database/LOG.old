@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 2024/12/02-14:08:59.673 8914 Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.5b85dce4\flutter_tools_chrome_device.9c86c230\Default\Service Worker\Database/MANIFEST-000001
 2024/12/02-14:08:59.676 8914 Recovering log #3
 2024/12/02-14:08:59.677 8914 Reusing old log C:\Users\Lucas\AppData\Local\Temp\flutter_tools.5b85dce4\flutter_tools_chrome_device.9c86c230\Default\Service Worker\Database/000003.log 
+=======
+2024/12/02-15:16:59.272 3a3c Reusing MANIFEST C:\Users\monte\AppData\Local\Temp\flutter_tools.5c31fc56\flutter_tools_chrome_device.c493297d\Default\Service Worker\Database/MANIFEST-000001
+2024/12/02-15:16:59.277 3a3c Recovering log #3
+2024/12/02-15:16:59.278 3a3c Reusing old log C:\Users\monte\AppData\Local\Temp\flutter_tools.5c31fc56\flutter_tools_chrome_device.c493297d\Default\Service Worker\Database/000003.log 
+>>>>>>> barber_selection_page
