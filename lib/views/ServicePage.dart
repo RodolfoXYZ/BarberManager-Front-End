@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:barbershop_app/views/HomePage.dart'; // Importe a HomePage
 
 class ServicePage extends StatefulWidget {
   @override
