@@ -1,5 +1,5 @@
+import 'package:barbershop_app/views/homepage.dart';
 import 'package:flutter/material.dart';
-import 'HomePage.dart';
 import 'package:flutter/gestures.dart';
 import 'CadastroPage.dart';
 

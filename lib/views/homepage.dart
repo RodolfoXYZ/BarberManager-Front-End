@@ -1,6 +1,8 @@
 import 'package:barbershop_app/views/LoginPage.dart';
 import 'package:flutter/material.dart';
 
+import 'ServicePage.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -25,7 +27,7 @@ class HomePage extends StatelessWidget {
 
       // Barra superior
       appBar: AppBar(
-        backgroundColor: Colors.blue[900], // Cor igual à da tela
+        backgroundColor: const Color.fromARGB(255, 18, 2, 66),
         actions: [
           IconButton(
             icon:
@@ -37,13 +39,7 @@ class HomePage extends StatelessWidget {
 
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(
-                'assets/logo.png'), // Caminho atualizado para a nova imagem
-            fit: BoxFit.cover, // A imagem vai cobrir toda a tela
-            colorFilter: ColorFilter.mode(Colors.blue.withOpacity(0.4),
-                BlendMode.darken), // Cor azul com opacidade ajustada
-          ),
+          color: Colors.white,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -53,7 +49,8 @@ class HomePage extends StatelessWidget {
               margin: EdgeInsets.all(20),
               color: Colors.blue[800],
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15)),
+                borderRadius: BorderRadius.circular(15),
+              ),
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(
@@ -80,80 +77,34 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 50), // Espaço para os ícones
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                // Ícone de corte dentro de uma bola azul mais clara
-                Column(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(15),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.blue[300], // Cor azul mais clara
-                      ),
-                      child: Icon(
-                        Icons.content_cut, // Ícone de corte de cabelo
-                        color: Colors.white, // Cor do ícone
-                        size: 40, // Tamanho do ícone
-                      ),
-                    ),
-                    SizedBox(height: 5),
-                    Text(
-                      'Corte',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ],
-                ),
+            SizedBox(height: 50), // Espaço entre o card e o botão
 
-                // Ícone de barba dentro de uma bola azul mais clara (agora igual ao de cabelo)
-                Column(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(15),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.blue[300], // Cor azul mais clara
-                      ),
-                      child: Icon(
-                        Icons
-                            .face, // Ícone de cabelo/rosto, que é o mais adequado para barba também
-                        color: Colors.white, // Cor do ícone
-                        size: 40, // Tamanho do ícone
-                      ),
-                    ),
-                    SizedBox(height: 5),
-                    Text(
-                      'Barba',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ServicePage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 18, 2, 66),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
                 ),
-
-                // Ícone de sobrancelha (alterado de "cabelo" para "sobrancelha")
-                Column(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(15),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.blue[300], // Cor azul mais clara
-                      ),
-                      child: Icon(
-                        Icons.face, // O mesmo ícone de rosto para sobrancelha
-                        color: Colors.white, // Cor do ícone
-                        size: 40, // Tamanho do ícone
-                      ),
+                child: const SizedBox(
+                  width: double.infinity,
+                  height: 50,
+                  child: Center(
+                    child: Text(
+                      'ESCOLHER SERVIÇOS',
+                      style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
-                    SizedBox(height: 5),
-                    Text(
-                      'Sobrancelha',
-                      style: TextStyle(color: Colors.white),
-                    ),
-                  ],
+                  ),
                 ),
-              ],
+              ),
             ),
           ],
         ),
@@ -161,7 +112,7 @@ class HomePage extends StatelessWidget {
 
       // Barra inferior azul com ícones brancos
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.blue[900], // Barra inferior azul
+        backgroundColor: const Color.fromARGB(255, 18, 2, 66),
         selectedItemColor: Colors.white, // Cor dos ícones selecionados
         unselectedItemColor: Colors.white, // Cor dos ícones não selecionados
         type: BottomNavigationBarType.fixed, // Layout fixo
