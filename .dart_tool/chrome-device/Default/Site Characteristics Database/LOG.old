@@ -1,14 +1,16 @@
-<<<<<<< HEAD
-2024/12/02-14:08:59.678 48e8 Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.5b85dce4\flutter_tools_chrome_device.9c86c230\Default\Site Characteristics Database/MANIFEST-000001
-2024/12/02-14:08:59.678 48e8 Recovering log #10
-2024/12/02-14:08:59.679 48e8 Reusing old log C:\Users\Lucas\AppData\Local\Temp\flutter_tools.5b85dce4\flutter_tools_chrome_device.9c86c230\Default\Site Characteristics Database/000010.log 
-2024/12/02-14:08:59.679 48e8 Delete type=0 #3
-2024/12/02-14:08:59.679 48e8 Delete type=2 #4
-2024/12/02-14:08:59.679 48e8 Delete type=2 #6
-2024/12/02-14:08:59.679 48e8 Delete type=0 #6
-=======
-2024/12/02-15:16:59.269 298c Reusing MANIFEST C:\Users\monte\AppData\Local\Temp\flutter_tools.5c31fc56\flutter_tools_chrome_device.c493297d\Default\Site Characteristics Database/MANIFEST-000001
-2024/12/02-15:16:59.272 298c Recovering log #6
-2024/12/02-15:16:59.273 298c Reusing old log C:\Users\monte\AppData\Local\Temp\flutter_tools.5c31fc56\flutter_tools_chrome_device.c493297d\Default\Site Characteristics Database/000006.log 
-2024/12/02-15:16:59.275 298c Delete type=0 #3
->>>>>>> barber_selection_page
+2024/12/04-20:02:49.027 f38 Log #3: 6 ops saved to Table #15 OK
+2024/12/04-20:02:49.047 f38 Archiving C:\Users\monte\AppData\Local\Temp\flutter_tools.bbbb230d\flutter_tools_chrome_device.af856009\Default\Site Characteristics Database/000003.log: OK
+2024/12/04-20:02:49.070 f38 Log #6: 55 ops saved to Table #16 OK
+2024/12/04-20:02:49.089 f38 Archiving C:\Users\monte\AppData\Local\Temp\flutter_tools.bbbb230d\flutter_tools_chrome_device.af856009\Default\Site Characteristics Database/000006.log: OK
+2024/12/04-20:02:49.095 f38 Log #10: 15 ops saved to Table #17 OK
+2024/12/04-20:02:49.098 f38 Archiving C:\Users\monte\AppData\Local\Temp\flutter_tools.bbbb230d\flutter_tools_chrome_device.af856009\Default\Site Characteristics Database/000010.log: OK
+2024/12/04-20:02:49.099 f38 Table #4: 6 entries OK
+2024/12/04-20:02:49.099 f38 Table #6: 6 entries OK
+2024/12/04-20:02:49.100 f38 Table #11: 2 entries OK
+2024/12/04-20:02:49.100 f38 Table #13: 6 entries OK
+2024/12/04-20:02:49.100 f38 Table #14: 23 entries OK
+2024/12/04-20:02:49.100 f38 Table #15: 6 entries OK
+2024/12/04-20:02:49.101 f38 Table #16: 55 entries OK
+2024/12/04-20:02:49.101 f38 Table #17: 15 entries OK
+2024/12/04-20:02:49.115 f38 Archiving C:\Users\monte\AppData\Local\Temp\flutter_tools.bbbb230d\flutter_tools_chrome_device.af856009\Default\Site Characteristics Database/MANIFEST-000001: OK
+2024/12/04-20:02:49.126 f38 **** Repaired leveldb C:\Users\monte\AppData\Local\Temp\flutter_tools.bbbb230d\flutter_tools_chrome_device.af856009\Default\Site Characteristics Database; recovered 8 files; 3602 bytes. Some data may have been lost. ****
