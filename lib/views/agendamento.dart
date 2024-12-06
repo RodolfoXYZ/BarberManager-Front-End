@@ -1,18 +1,5 @@
+import 'package:barbershop_app/views/FormaDePagamento.dart';
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SchedulingPage(),
-    );
-  }
-}
 
 class SchedulingPage extends StatefulWidget {
   @override
@@ -125,7 +112,10 @@ class _SchedulingPageState extends State<SchedulingPage> {
             padding: const EdgeInsets.all(16.0),
             child: ElevatedButton(
               onPressed: () {
-                // Lógica ao finalizar
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => PaymentPage()),
+                );
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color.fromARGB(255, 18, 2, 66),

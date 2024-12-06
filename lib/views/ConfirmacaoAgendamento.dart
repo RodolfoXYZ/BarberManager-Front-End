@@ -1,24 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: ConfirmationPage(),
-    );
-  }
-}
-
 class ConfirmationPage extends StatelessWidget {
-  final DateTime selectedDate =
-      DateTime.now(); 
-  final String selectedTime =
-      '10:00'; 
+  final DateTime selectedDate = DateTime.now();
+  final String selectedTime = '10:00';
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +13,7 @@ class ConfirmationPage extends StatelessWidget {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () {
-            Navigator.pop(context); 
+            Navigator.pop(context);
           },
         ),
         title: const Text(
@@ -43,7 +27,6 @@ class ConfirmationPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            
             Center(
               child: Text(
                 'Resumo do Agendamento',
@@ -72,7 +55,7 @@ class ConfirmationPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Serviço: Corte de Cabelo', 
+                      'Serviço: Corte de Cabelo',
                       style: TextStyle(fontSize: 16),
                     ),
                   ],
@@ -82,15 +65,10 @@ class ConfirmationPage extends StatelessWidget {
             const SizedBox(height: 30),
             EvaluationSelection(),
             const SizedBox(height: 30),
-
-            
             Expanded(child: Container()),
-
-           
             Center(
               child: ElevatedButton(
                 onPressed: () {
-                  
                   showDialog(
                     context: context,
                     builder: (context) => AlertDialog(
@@ -100,8 +78,7 @@ class ConfirmationPage extends StatelessWidget {
                       actions: [
                         TextButton(
                           onPressed: () {
-                            Navigator.pop(
-                                context); 
+                            Navigator.pop(context);
                           },
                           child: const Text('OK'),
                         ),
@@ -115,15 +92,13 @@ class ConfirmationPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                 ),
-                child: SizedBox(
-                  height: 55,
+                child: const SizedBox(
+                  width: double.infinity,
+                  height: 50,
                   child: Center(
                     child: Text(
-                      'CONFIRMAR AGENDAMENTO',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                      ),
+                      'CONFIRMAR',
+                      style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                   ),
                 ),
@@ -153,11 +128,10 @@ class _EvaluationSelectionState extends State<EvaluationSelection> {
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 20),
-        
         Wrap(
           spacing: 10,
-          runSpacing: 10, 
-          alignment: WrapAlignment.center, 
+          runSpacing: 10,
+          alignment: WrapAlignment.center,
           children: [
             ElevatedButton(
               onPressed: () {
@@ -166,7 +140,7 @@ class _EvaluationSelectionState extends State<EvaluationSelection> {
                 });
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red, 
+                backgroundColor: Colors.red,
               ),
               child: const Text('Péssimo'),
             ),
@@ -177,7 +151,7 @@ class _EvaluationSelectionState extends State<EvaluationSelection> {
                 });
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.orange, 
+                backgroundColor: Colors.orange,
               ),
               child: const Text('Ruim'),
             ),
@@ -188,7 +162,7 @@ class _EvaluationSelectionState extends State<EvaluationSelection> {
                 });
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.yellow, 
+                backgroundColor: Colors.yellow,
               ),
               child: const Text('Regular'),
             ),
@@ -199,7 +173,7 @@ class _EvaluationSelectionState extends State<EvaluationSelection> {
                 });
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.lightGreen, 
+                backgroundColor: Colors.lightGreen,
               ),
               child: const Text('Bom'),
             ),
@@ -210,31 +184,28 @@ class _EvaluationSelectionState extends State<EvaluationSelection> {
                 });
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor:
-                    Colors.greenAccent, 
+                backgroundColor: Colors.greenAccent,
               ),
               child: const Text('Ótimo'),
             ),
           ],
         ),
         const SizedBox(height: 20),
-        
         if (selectedEvaluation.isNotEmpty)
           Text(
             '$selectedEvaluation',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
         const SizedBox(height: 10),
-        
         if (selectedEvaluation.isNotEmpty)
           ElevatedButton(
             onPressed: () {
               setState(() {
-                selectedEvaluation = ''; 
+                selectedEvaluation = '';
               });
             },
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.grey, 
+              backgroundColor: Colors.grey,
             ),
             child: const Text('Remover'),
           ),

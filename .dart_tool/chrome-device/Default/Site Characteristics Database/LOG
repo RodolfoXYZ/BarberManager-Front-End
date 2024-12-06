@@ -1,13 +1,15 @@
-2024/12/04-20:02:49.133 f38 Reusing MANIFEST C:\Users\monte\AppData\Local\Temp\flutter_tools.bbbb230d\flutter_tools_chrome_device.af856009\Default\Site Characteristics Database/MANIFEST-000001
-2024/12/04-20:02:49.134 3b20 Compacting 8@0 + 0@1 files
-2024/12/04-20:02:49.148 3b20 Generated table #20@0: 2 keys, 194 bytes
-2024/12/04-20:02:49.148 3b20 Compacted 8@0 + 0@1 files => 194 bytes
-2024/12/04-20:02:49.151 3b20 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/04-20:02:49.152 3b20 Delete type=2 #4
-2024/12/04-20:02:49.153 3b20 Delete type=2 #6
-2024/12/04-20:02:49.153 3b20 Delete type=2 #11
-2024/12/04-20:02:49.153 3b20 Delete type=2 #13
-2024/12/04-20:02:49.153 3b20 Delete type=2 #14
-2024/12/04-20:02:49.153 3b20 Delete type=2 #15
-2024/12/04-20:02:49.153 3b20 Delete type=2 #16
-2024/12/04-20:02:49.166 3b20 Delete type=2 #17
+2024/12/06-15:51:26.019 3de8 Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.b0373287\flutter_tools_chrome_device.5f2c02b3\Default\Site Characteristics Database/MANIFEST-000001
+2024/12/06-15:51:26.020 23d8 Compacting 10@0 + 0@1 files
+2024/12/06-15:51:26.035 23d8 Generated table #27@0: 2 keys, 194 bytes
+2024/12/06-15:51:26.035 23d8 Compacted 10@0 + 0@1 files => 194 bytes
+2024/12/06-15:51:26.046 23d8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/06-15:51:26.047 23d8 Delete type=2 #4
+2024/12/06-15:51:26.047 23d8 Delete type=2 #6
+2024/12/06-15:51:26.047 23d8 Delete type=2 #11
+2024/12/06-15:51:26.047 23d8 Delete type=2 #13
+2024/12/06-15:51:26.047 23d8 Delete type=2 #14
+2024/12/06-15:51:26.047 23d8 Delete type=2 #20
+2024/12/06-15:51:26.047 23d8 Delete type=2 #21
+2024/12/06-15:51:26.048 23d8 Delete type=2 #22
+2024/12/06-15:51:26.048 23d8 Delete type=2 #23
+2024/12/06-15:51:26.048 23d8 Delete type=2 #24
