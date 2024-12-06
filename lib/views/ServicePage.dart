@@ -1,3 +1,4 @@
+import 'package:barbershop_app/views/barberselectionPage.dart';
 import 'package:flutter/material.dart';
 
 class ServicePage extends StatefulWidget {
@@ -33,6 +34,11 @@ class _ServicePageState extends State<ServicePage> {
       );
       return;
     }
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => BarberListScreen()),
+    );
   }
 
   @override

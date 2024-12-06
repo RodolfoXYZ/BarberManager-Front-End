@@ -3,28 +3,10 @@ import 'package:flutter/material.dart';
 
 import 'ServicePage.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: LoginPage(),
-    );
-  }
-}
-
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Cor de fundo da tela principal
-      backgroundColor:
-          Colors.transparent, // Para deixar a imagem de fundo visível
-
       // Barra superior
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 18, 2, 66),

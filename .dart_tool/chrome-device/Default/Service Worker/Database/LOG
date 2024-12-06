@@ -1,9 +1,2 @@
-<<<<<<< HEAD
-2024/12/02-14:11:43.481 287c Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.20a75416\flutter_tools_chrome_device.70fe2784\Default\Service Worker\Database/MANIFEST-000001
-2024/12/02-14:11:43.483 287c Recovering log #3
-2024/12/02-14:11:43.484 287c Reusing old log C:\Users\Lucas\AppData\Local\Temp\flutter_tools.20a75416\flutter_tools_chrome_device.70fe2784\Default\Service Worker\Database/000003.log 
-=======
-2024/12/02-15:28:45.234 5780 Reusing MANIFEST C:\Users\monte\AppData\Local\Temp\flutter_tools.e5d1ca9a\flutter_tools_chrome_device.cc636fcd\Default\Service Worker\Database/MANIFEST-000001
-2024/12/02-15:28:45.235 5780 Recovering log #3
-2024/12/02-15:28:45.236 5780 Reusing old log C:\Users\monte\AppData\Local\Temp\flutter_tools.e5d1ca9a\flutter_tools_chrome_device.cc636fcd\Default\Service Worker\Database/000003.log 
->>>>>>> barber_selection_page
+2024/12/06-16:04:05.265 442c Creating DB C:\Users\Lucas\AppData\Local\Temp\flutter_tools.b0373287\flutter_tools_chrome_device.5f2c02b3\Default\Service Worker\Database since it was missing.
+2024/12/06-16:04:05.273 442c Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.b0373287\flutter_tools_chrome_device.5f2c02b3\Default\Service Worker\Database/MANIFEST-000001

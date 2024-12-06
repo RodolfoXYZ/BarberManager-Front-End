@@ -1,18 +1,5 @@
+import 'package:barbershop_app/views/ConfirmacaoAgendamento.dart';
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: PaymentPage(),
-    );
-  }
-}
 
 class PaymentPage extends StatefulWidget {
   @override
@@ -77,6 +64,12 @@ class _PaymentPageState extends State<PaymentPage> {
               ElevatedButton(
                 onPressed: selectedPaymentMethod != null
                     ? () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ConfirmationPage()),
+                        );
+
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text(
@@ -87,13 +80,16 @@ class _PaymentPageState extends State<PaymentPage> {
                     : null,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 18, 2, 66),
-                  disabledBackgroundColor: Colors.grey,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
                 ),
                 child: const SizedBox(
+                  width: double.infinity,
                   height: 50,
                   child: Center(
                     child: Text(
-                      'Confirmar Pagamento',
+                      'CONFIRMAR',
                       style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                   ),
@@ -153,4 +149,3 @@ class PaymentOption extends StatelessWidget {
     );
   }
 }
-

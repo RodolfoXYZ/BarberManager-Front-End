@@ -1,18 +1,5 @@
+import 'package:barbershop_app/views/agendamento.dart';
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: BarberListScreen(),
-    );
-  }
-}
 
 class BarberListScreen extends StatefulWidget {
   @override
@@ -61,6 +48,12 @@ class _BarberListScreenState extends State<BarberListScreen> {
         ),
         backgroundColor: const Color(0xFF120242),
         centerTitle: true,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
       body: Column(
         children: [
@@ -76,33 +69,44 @@ class _BarberListScreenState extends State<BarberListScreen> {
             ),
           ),
           Padding(
-  padding: const EdgeInsets.all(10.0),
-  child: ElevatedButton(
-    onPressed: selectedBarberIndex != null
-        ? () {
-            String barberName = barbers[selectedBarberIndex!]['name']!;
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text('O barbeiro $barberName foi selecionado!'),
-                backgroundColor: const Color(0xFF120242),
+            padding: const EdgeInsets.all(10.0),
+            child: ElevatedButton(
+              onPressed: selectedBarberIndex != null
+                  ? () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SchedulingPage()),
+                      );
+                      String barberName =
+                          barbers[selectedBarberIndex!]['name']!;
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content:
+                              Text('O barbeiro $barberName foi selecionado!'),
+                          backgroundColor: const Color(0xFF120242),
+                        ),
+                      );
+                    }
+                  : null,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 18, 2, 66),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
               ),
-            );
-          }
-        : null,
-    style: ElevatedButton.styleFrom(
-      primary: const Color(0xFF120242),
-      padding: EdgeInsets.symmetric(horizontal: 100, vertical: 15),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(30),
-      ),
-    ),
-    child: Text(
-      'Confirmar Barbeiro',
-      style: TextStyle(color: Colors.white, fontSize: 18),
-    ),
-  ),
-),
-
+              child: const SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: Center(
+                  child: Text(
+                    'CONFIRMAR',
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -127,7 +131,7 @@ class _BarberListScreenState extends State<BarberListScreen> {
             width: 60,
             height: 90,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10), 
+              borderRadius: BorderRadius.circular(10),
               image: DecorationImage(
                 image: AssetImage(barber['image']!),
                 fit: BoxFit.cover,
