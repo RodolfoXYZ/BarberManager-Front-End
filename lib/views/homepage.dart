@@ -1,3 +1,6 @@
+
+import 'package:barbershop_app/views/LoginPage.dart';
+import 'package:barbershop_app/views/lista-agendamentos.dart';
 import 'package:flutter/material.dart';
 import 'ServicePage.dart';
 
@@ -114,7 +117,38 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-          ),
+ 
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AgendamentosUsuarioPage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 18, 2, 66),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                ),
+                child: const SizedBox(
+                  width: double.infinity,
+                  height: 50,
+                  child: Center(
+                    child: Text(
+                      'MEUS AGENDAMENTOS',
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
+
+         
+
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
