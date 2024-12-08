@@ -1,5 +1,6 @@
 import 'package:barbershop_app/views/barberselectionPage.dart';
 import 'package:flutter/material.dart';
+import 'agendamento.dart';
 
 class ServicePage extends StatefulWidget {
   @override
@@ -37,7 +38,12 @@ class _ServicePageState extends State<ServicePage> {
 
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => BarberListScreen()),
+      MaterialPageRoute(
+        builder: (context) => AgendamentoPage(
+          selectedServices: _selectedServices,
+          serviceLocation: _serviceLocation,
+        ),
+      ),
     );
   }
 
