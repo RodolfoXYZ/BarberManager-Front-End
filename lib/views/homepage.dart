@@ -1,6 +1,6 @@
-
 import 'package:barbershop_app/views/LoginPage.dart';
 import 'package:barbershop_app/views/lista-agendamentos.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'ServicePage.dart';
 
@@ -46,13 +46,34 @@ class HomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 20),
-                const Text(
-                  'Meus Próximos Agendamentos',
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        'Meus Próximos Agendamentos',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                          color: Color.fromARGB(255, 0, 0, 0),
+                        ),
+                      ),
+                    RichText(
+            text: TextSpan(children: [
+              TextSpan(
+                  text: 'Ver todos',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                    color: Color.fromARGB(255, 0, 0, 0),
+                    color: Colors.black,
                   ),
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () {
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(builder: (context) => AgendamentosUsuarioPage())
+                      );
+                    }),
+            ]),
+          ),
+                  ],
                 ),
                 const SizedBox(height: 10),
                 Card(
@@ -117,38 +138,7 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
- 
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => AgendamentosUsuarioPage()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(255, 18, 2, 66),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                ),
-                child: const SizedBox(
-                  width: double.infinity,
-                  height: 50,
-                  child: Center(
-                    child: Text(
-                      'MEUS AGENDAMENTOS',
-                      style: TextStyle(color: Colors.white, fontSize: 16),
-                    ),
-                  ),
-                ),
-              ),
-            ),
-          ],
-
-         
-
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(

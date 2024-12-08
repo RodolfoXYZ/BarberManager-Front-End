@@ -1,3 +1,4 @@
+import 'package:barbershop_app/views/FormaDePagamento.dart';
 import 'package:flutter/material.dart';
 import 'ConfirmacaoAgendamento.dart';
 
@@ -204,7 +205,7 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => ConfirmationPage(
+                            builder: (context) => PaymentPage(
                               selectedDate: _selectedDate!,
                               selectedTime: _selectedTime!,
                               selectedServices: widget.selectedServices,

@@ -76,7 +76,7 @@ class _BarberListScreenState extends State<BarberListScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => SchedulingPage()),
+                            builder: (context) => AgendamentoPage(selectedServices: {"barba": true}, serviceLocation: "Jaboatão",)),
                       );
                       String barberName =
                           barbers[selectedBarberIndex!]['name']!;

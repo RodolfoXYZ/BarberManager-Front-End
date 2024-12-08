@@ -2,6 +2,19 @@ import 'package:barbershop_app/views/ConfirmacaoAgendamento.dart';
 import 'package:flutter/material.dart';
 
 class PaymentPage extends StatefulWidget {
+  
+  String? serviceLocation;
+  late DateTime selectedDate;
+  late String selectedTime;
+  late Map<String, bool> selectedServices;
+
+  PaymentPage({
+    Key? key,
+    this.serviceLocation,
+    required this.selectedDate,
+    required this.selectedTime,
+    required this.selectedServices,
+  }) : super(key: key);
   @override
   _PaymentPageState createState() => _PaymentPageState();
 }
@@ -11,6 +24,7 @@ class _PaymentPageState extends State<PaymentPage> {
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 18, 2, 66),
@@ -67,7 +81,12 @@ class _PaymentPageState extends State<PaymentPage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => ConfirmationPage()),
+                              builder: (context) => ConfirmationPage(
+                                    selectedDate: widget.selectedDate,
+                                    selectedServices: widget.selectedServices,
+                                    selectedTime: widget.selectedTime,
+                                    serviceLocation: widget.serviceLocation,
+                                  )),
                         );
 
                         ScaffoldMessenger.of(context).showSnackBar(

@@ -1,3 +1,4 @@
+import 'package:barbershop_app/views/homepage.dart';
 import 'package:flutter/material.dart';
 
 class ConfirmationPage extends StatelessWidget {
@@ -128,7 +129,13 @@ class ConfirmationPage extends StatelessWidget {
                         actions: [
                           TextButton(
                             onPressed: () {
-                              Navigator.pop(context);
+                              Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => HomePage(
+                                      ),
+                                    ),
+                              );
                             },
                             child: const Text('OK'),
                           ),

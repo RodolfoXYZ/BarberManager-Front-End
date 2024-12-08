@@ -1,17 +1,19 @@
-2024/12/07-17:54:49.827 2cc4 Reusing MANIFEST C:\Users\anthc\AppData\Local\Temp\flutter_tools.33ea9c54\flutter_tools_chrome_device.e45bf4da\Default\Site Characteristics Database/MANIFEST-000001
-2024/12/07-17:54:49.828 3734 Compacting 12@0 + 0@1 files
-2024/12/07-17:54:49.846 3734 Generated table #35@0: 2 keys, 194 bytes
-2024/12/07-17:54:49.846 3734 Compacted 12@0 + 0@1 files => 194 bytes
-2024/12/07-17:54:49.851 3734 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/07-17:54:49.852 3734 Delete type=2 #4
-2024/12/07-17:54:49.852 3734 Delete type=2 #6
-2024/12/07-17:54:49.852 3734 Delete type=2 #11
-2024/12/07-17:54:49.852 3734 Delete type=2 #13
-2024/12/07-17:54:49.852 3734 Delete type=2 #14
-2024/12/07-17:54:49.852 3734 Delete type=2 #20
-2024/12/07-17:54:49.853 3734 Delete type=2 #27
-2024/12/07-17:54:49.853 3734 Delete type=2 #28
-2024/12/07-17:54:49.853 3734 Delete type=2 #29
-2024/12/07-17:54:49.853 3734 Delete type=2 #30
-2024/12/07-17:54:49.853 3734 Delete type=2 #31
-2024/12/07-17:54:49.853 3734 Delete type=2 #32
+2024/12/07-22:20:29.109 4f9c Reusing MANIFEST C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/MANIFEST-000001
+2024/12/07-22:20:29.112 4e6c Compacting 14@0 + 0@1 files
+2024/12/07-22:20:29.119 4e6c Generated table #44@0: 2 keys, 194 bytes
+2024/12/07-22:20:29.120 4e6c Compacted 14@0 + 0@1 files => 194 bytes
+2024/12/07-22:20:29.125 4e6c compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/07-22:20:29.126 4e6c Delete type=2 #4
+2024/12/07-22:20:29.126 4e6c Delete type=2 #6
+2024/12/07-22:20:29.126 4e6c Delete type=2 #11
+2024/12/07-22:20:29.126 4e6c Delete type=2 #13
+2024/12/07-22:20:29.126 4e6c Delete type=2 #14
+2024/12/07-22:20:29.126 4e6c Delete type=2 #20
+2024/12/07-22:20:29.127 4e6c Delete type=2 #27
+2024/12/07-22:20:29.127 4e6c Delete type=2 #35
+2024/12/07-22:20:29.127 4e6c Delete type=2 #36
+2024/12/07-22:20:29.127 4e6c Delete type=2 #37
+2024/12/07-22:20:29.127 4e6c Delete type=2 #38
+2024/12/07-22:20:29.127 4e6c Delete type=2 #39
+2024/12/07-22:20:29.127 4e6c Delete type=2 #40
+2024/12/07-22:20:29.128 4e6c Delete type=2 #41

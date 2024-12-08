@@ -1,24 +1,28 @@
-2024/12/07-17:54:49.483 2cc4 Log #3: 6 ops saved to Table #28 OK
-2024/12/07-17:54:49.582 2cc4 Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.33ea9c54\flutter_tools_chrome_device.e45bf4da\Default\Site Characteristics Database/000003.log: OK
-2024/12/07-17:54:49.660 2cc4 Log #6: 55 ops saved to Table #29 OK
-2024/12/07-17:54:49.688 2cc4 Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.33ea9c54\flutter_tools_chrome_device.e45bf4da\Default\Site Characteristics Database/000006.log: OK
-2024/12/07-17:54:49.743 2cc4 Log #10: 15 ops saved to Table #30 OK
-2024/12/07-17:54:49.763 2cc4 Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.33ea9c54\flutter_tools_chrome_device.e45bf4da\Default\Site Characteristics Database/000010.log: OK
-2024/12/07-17:54:49.769 2cc4 Log #19: 1 ops saved to Table #31 OK
-2024/12/07-17:54:49.772 2cc4 Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.33ea9c54\flutter_tools_chrome_device.e45bf4da\Default\Site Characteristics Database/000019.log: OK
-2024/12/07-17:54:49.779 2cc4 Log #26: 1 ops saved to Table #32 OK
-2024/12/07-17:54:49.781 2cc4 Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.33ea9c54\flutter_tools_chrome_device.e45bf4da\Default\Site Characteristics Database/000026.log: OK
-2024/12/07-17:54:49.782 2cc4 Table #4: 6 entries OK
-2024/12/07-17:54:49.782 2cc4 Table #6: 6 entries OK
-2024/12/07-17:54:49.783 2cc4 Table #11: 2 entries OK
-2024/12/07-17:54:49.787 2cc4 Table #13: 6 entries OK
-2024/12/07-17:54:49.787 2cc4 Table #14: 23 entries OK
-2024/12/07-17:54:49.787 2cc4 Table #20: 2 entries OK
-2024/12/07-17:54:49.788 2cc4 Table #27: 2 entries OK
-2024/12/07-17:54:49.788 2cc4 Table #28: 6 entries OK
-2024/12/07-17:54:49.788 2cc4 Table #29: 55 entries OK
-2024/12/07-17:54:49.788 2cc4 Table #30: 15 entries OK
-2024/12/07-17:54:49.792 2cc4 Table #31: 1 entries OK
-2024/12/07-17:54:49.792 2cc4 Table #32: 1 entries OK
-2024/12/07-17:54:49.797 2cc4 Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.33ea9c54\flutter_tools_chrome_device.e45bf4da\Default\Site Characteristics Database/MANIFEST-000001: OK
-2024/12/07-17:54:49.813 2cc4 **** Repaired leveldb C:\Users\anthc\AppData\Local\Temp\flutter_tools.33ea9c54\flutter_tools_chrome_device.e45bf4da\Default\Site Characteristics Database; recovered 12 files; 4320 bytes. Some data may have been lost. ****
+2024/12/07-22:20:29.009 4f9c Log #3: 6 ops saved to Table #36 OK
+2024/12/07-22:20:29.023 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000003.log: OK
+2024/12/07-22:20:29.029 4f9c Log #6: 55 ops saved to Table #37 OK
+2024/12/07-22:20:29.033 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000006.log: OK
+2024/12/07-22:20:29.038 4f9c Log #10: 15 ops saved to Table #38 OK
+2024/12/07-22:20:29.042 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000010.log: OK
+2024/12/07-22:20:29.047 4f9c Log #19: 1 ops saved to Table #39 OK
+2024/12/07-22:20:29.051 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000019.log: OK
+2024/12/07-22:20:29.058 4f9c Log #26: 1 ops saved to Table #40 OK
+2024/12/07-22:20:29.063 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000026.log: OK
+2024/12/07-22:20:29.073 4f9c Log #34: 1 ops saved to Table #41 OK
+2024/12/07-22:20:29.076 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000034.log: OK
+2024/12/07-22:20:29.076 4f9c Table #4: 6 entries OK
+2024/12/07-22:20:29.078 4f9c Table #6: 6 entries OK
+2024/12/07-22:20:29.078 4f9c Table #11: 2 entries OK
+2024/12/07-22:20:29.079 4f9c Table #13: 6 entries OK
+2024/12/07-22:20:29.079 4f9c Table #14: 23 entries OK
+2024/12/07-22:20:29.079 4f9c Table #20: 2 entries OK
+2024/12/07-22:20:29.079 4f9c Table #27: 2 entries OK
+2024/12/07-22:20:29.079 4f9c Table #35: 2 entries OK
+2024/12/07-22:20:29.080 4f9c Table #36: 6 entries OK
+2024/12/07-22:20:29.080 4f9c Table #37: 55 entries OK
+2024/12/07-22:20:29.080 4f9c Table #38: 15 entries OK
+2024/12/07-22:20:29.084 4f9c Table #39: 1 entries OK
+2024/12/07-22:20:29.084 4f9c Table #40: 1 entries OK
+2024/12/07-22:20:29.084 4f9c Table #41: 1 entries OK
+2024/12/07-22:20:29.092 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/MANIFEST-000001: OK
+2024/12/07-22:20:29.103 4f9c **** Repaired leveldb C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database; recovered 14 files; 4679 bytes. Some data may have been lost. ****
