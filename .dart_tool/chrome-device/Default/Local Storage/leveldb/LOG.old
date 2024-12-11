@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-2024/12/02-14:08:59.726 359c Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.5b85dce4\flutter_tools_chrome_device.9c86c230\Default\Local Storage\leveldb/MANIFEST-000001
-2024/12/02-14:08:59.730 359c Recovering log #3
-2024/12/02-14:08:59.732 359c Reusing old log C:\Users\Lucas\AppData\Local\Temp\flutter_tools.5b85dce4\flutter_tools_chrome_device.9c86c230\Default\Local Storage\leveldb/000003.log 
-=======
-2024/12/02-15:16:59.481 5128 Reusing MANIFEST C:\Users\monte\AppData\Local\Temp\flutter_tools.5c31fc56\flutter_tools_chrome_device.c493297d\Default\Local Storage\leveldb/MANIFEST-000001
-2024/12/02-15:16:59.516 5128 Recovering log #3
-2024/12/02-15:16:59.528 5128 Reusing old log C:\Users\monte\AppData\Local\Temp\flutter_tools.5c31fc56\flutter_tools_chrome_device.c493297d\Default\Local Storage\leveldb/000003.log 
->>>>>>> barber_selection_page
+2024/12/11-11:47:47.852 23e0 Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.8d1e69a0\flutter_tools_chrome_device.b30995ce\Default\Local Storage\leveldb/MANIFEST-000001
+2024/12/11-11:47:47.858 23e0 Recovering log #4
+2024/12/11-11:47:47.860 23e0 Reusing old log C:\Users\Lucas\AppData\Local\Temp\flutter_tools.8d1e69a0\flutter_tools_chrome_device.b30995ce\Default\Local Storage\leveldb/000004.log 
+2024/12/11-11:47:47.863 23e0 Delete type=0 #3

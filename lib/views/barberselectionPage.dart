@@ -2,6 +2,14 @@ import 'package:barbershop_app/views/agendamento.dart';
 import 'package:flutter/material.dart';
 
 class BarberListScreen extends StatefulWidget {
+  final Map<String, bool> selectedServices;
+  final String? serviceLocation;
+
+  BarberListScreen({
+    required this.selectedServices,
+    required this.serviceLocation,
+  });
+
   @override
   _BarberListScreenState createState() => _BarberListScreenState();
 }
@@ -76,7 +84,10 @@ class _BarberListScreenState extends State<BarberListScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => AgendamentoPage(selectedServices: {"barba": true}, serviceLocation: "Jaboatão",)),
+                            builder: (context) => AgendamentoPage(
+                                  selectedServices: widget.selectedServices,
+                                  serviceLocation: widget.serviceLocation,
+                                )),
                       );
                       String barberName =
                           barbers[selectedBarberIndex!]['name']!;
