@@ -7,8 +7,6 @@ class AgendamentosUsuarioPage extends StatefulWidget {
 }
 
 class _AgendamentosUsuarioPageState extends State<AgendamentosUsuarioPage> {
-
-
   final List<Map<String, String>> agendamentos = [
     {
       "service": "Corte Clássico",
@@ -46,8 +44,9 @@ class _AgendamentosUsuarioPageState extends State<AgendamentosUsuarioPage> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Meus Agendamentos"),
+        titleTextStyle: TextStyle(color: Colors.white),
         centerTitle: true,
-        backgroundColor: Color(0xFF2D1E55), 
+        backgroundColor: const Color(0xFF120242),
       ),
       body: Column(
         children: [
@@ -57,10 +56,9 @@ class _AgendamentosUsuarioPageState extends State<AgendamentosUsuarioPage> {
               itemBuilder: (context, index) {
                 final agendamento = agendamentos[index];
                 return Container(
-                  margin:
-                      EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+                  margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
                   decoration: BoxDecoration(
-                    color: Color(0xFFF8F1FF), 
+                    color: Color(0xFFF8F1FF),
                     borderRadius: BorderRadius.circular(12.0),
                     boxShadow: [
                       BoxShadow(
@@ -93,8 +91,8 @@ class _AgendamentosUsuarioPageState extends State<AgendamentosUsuarioPage> {
                       style: TextStyle(fontSize: 12.0, color: Colors.grey[600]),
                     ),
                     trailing: Container(
-                      padding: EdgeInsets.symmetric(
-                          vertical: 4.0, horizontal: 8.0),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 4.0, horizontal: 8.0),
                       decoration: BoxDecoration(
                         color: _getStatusColor(agendamento['status']!),
                         borderRadius: BorderRadius.circular(8.0),
@@ -124,15 +122,16 @@ class _AgendamentosUsuarioPageState extends State<AgendamentosUsuarioPage> {
                 );
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xFF6D33A4),
-                padding: EdgeInsets.symmetric(vertical: 16.0),
+                backgroundColor: const Color(0xFF120242),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
               ),
               child: Center(
                 child: Text(
                   "ATUALIZAR",
                   style: TextStyle(
                     color: Colors.white,
-                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),

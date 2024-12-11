@@ -1,28 +1,47 @@
-2024/12/07-22:20:29.009 4f9c Log #3: 6 ops saved to Table #36 OK
-2024/12/07-22:20:29.023 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000003.log: OK
-2024/12/07-22:20:29.029 4f9c Log #6: 55 ops saved to Table #37 OK
-2024/12/07-22:20:29.033 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000006.log: OK
-2024/12/07-22:20:29.038 4f9c Log #10: 15 ops saved to Table #38 OK
-2024/12/07-22:20:29.042 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000010.log: OK
-2024/12/07-22:20:29.047 4f9c Log #19: 1 ops saved to Table #39 OK
-2024/12/07-22:20:29.051 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000019.log: OK
-2024/12/07-22:20:29.058 4f9c Log #26: 1 ops saved to Table #40 OK
-2024/12/07-22:20:29.063 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000026.log: OK
-2024/12/07-22:20:29.073 4f9c Log #34: 1 ops saved to Table #41 OK
-2024/12/07-22:20:29.076 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/000034.log: OK
-2024/12/07-22:20:29.076 4f9c Table #4: 6 entries OK
-2024/12/07-22:20:29.078 4f9c Table #6: 6 entries OK
-2024/12/07-22:20:29.078 4f9c Table #11: 2 entries OK
-2024/12/07-22:20:29.079 4f9c Table #13: 6 entries OK
-2024/12/07-22:20:29.079 4f9c Table #14: 23 entries OK
-2024/12/07-22:20:29.079 4f9c Table #20: 2 entries OK
-2024/12/07-22:20:29.079 4f9c Table #27: 2 entries OK
-2024/12/07-22:20:29.079 4f9c Table #35: 2 entries OK
-2024/12/07-22:20:29.080 4f9c Table #36: 6 entries OK
-2024/12/07-22:20:29.080 4f9c Table #37: 55 entries OK
-2024/12/07-22:20:29.080 4f9c Table #38: 15 entries OK
-2024/12/07-22:20:29.084 4f9c Table #39: 1 entries OK
-2024/12/07-22:20:29.084 4f9c Table #40: 1 entries OK
-2024/12/07-22:20:29.084 4f9c Table #41: 1 entries OK
-2024/12/07-22:20:29.092 4f9c Archiving C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database/MANIFEST-000001: OK
-2024/12/07-22:20:29.103 4f9c **** Repaired leveldb C:\Users\anthc\AppData\Local\Temp\flutter_tools.98b88e8b\flutter_tools_chrome_device.8b990f0a\Default\Site Characteristics Database; recovered 14 files; 4679 bytes. Some data may have been lost. ****
+2024/12/11-11:47:47.805 3ce8 Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.8d1e69a0\flutter_tools_chrome_device.b30995ce\Default\Site Characteristics Database/MANIFEST-000001
+2024/12/11-11:47:47.840 3ce8 Recovering log #3
+2024/12/11-11:47:47.841 3ce8 Level-0 table #46: started
+2024/12/11-11:47:48.171 3ce8 Level-0 table #46: 288 bytes OK
+2024/12/11-11:47:48.213 3ce8 Recovering log #6
+2024/12/11-11:47:48.213 3ce8 Level-0 table #47: started
+2024/12/11-11:47:48.320 3ce8 Level-0 table #47: 1157 bytes OK
+2024/12/11-11:47:48.320 3ce8 Recovering log #10
+2024/12/11-11:47:48.320 3ce8 Level-0 table #48: started
+2024/12/11-11:47:48.436 3ce8 Level-0 table #48: 489 bytes OK
+2024/12/11-11:47:48.436 3ce8 Recovering log #19
+2024/12/11-11:47:48.436 3ce8 Level-0 table #49: started
+2024/12/11-11:47:48.460 3ce8 Level-0 table #49: 165 bytes OK
+2024/12/11-11:47:48.460 3ce8 Recovering log #26
+2024/12/11-11:47:48.460 3ce8 Level-0 table #50: started
+2024/12/11-11:47:48.485 3ce8 Level-0 table #50: 165 bytes OK
+2024/12/11-11:47:48.485 3ce8 Recovering log #34
+2024/12/11-11:47:48.485 3ce8 Level-0 table #51: started
+2024/12/11-11:47:48.508 3ce8 Level-0 table #51: 165 bytes OK
+2024/12/11-11:47:48.508 3ce8 Recovering log #43
+2024/12/11-11:47:48.508 3ce8 Reusing old log C:\Users\Lucas\AppData\Local\Temp\flutter_tools.8d1e69a0\flutter_tools_chrome_device.b30995ce\Default\Site Characteristics Database/000043.log 
+2024/12/11-11:47:48.523 3ce8 Delete type=0 #3
+2024/12/11-11:47:48.523 3ce8 Delete type=2 #4
+2024/12/11-11:47:48.523 3ce8 Delete type=2 #6
+2024/12/11-11:47:48.523 3ce8 Delete type=0 #6
+2024/12/11-11:47:48.523 3ce8 Delete type=0 #10
+2024/12/11-11:47:48.523 3ce8 Delete type=2 #11
+2024/12/11-11:47:48.523 3ce8 Delete type=2 #13
+2024/12/11-11:47:48.523 3ce8 Delete type=2 #14
+2024/12/11-11:47:48.523 3ce8 Delete type=0 #19
+2024/12/11-11:47:48.523 3ce8 Delete type=2 #20
+2024/12/11-11:47:48.523 3ce8 Delete type=0 #26
+2024/12/11-11:47:48.523 3ce8 Delete type=2 #27
+2024/12/11-11:47:48.523 3ce8 Delete type=2 #33
+2024/12/11-11:47:48.523 3ce8 Delete type=0 #34
+2024/12/11-11:47:48.523 3ce8 Delete type=2 #35
+2024/12/11-11:47:48.525 4044 Compacting 6@0 + 1@1 files
+2024/12/11-11:47:48.546 4044 Generated table #52@0: 2 keys, 194 bytes
+2024/12/11-11:47:48.546 4044 Compacted 6@0 + 1@1 files => 194 bytes
+2024/12/11-11:47:48.556 4044 compacted to: files[ 0 1 0 0 0 0 0 ]
+2024/12/11-11:47:48.556 4044 Delete type=2 #44
+2024/12/11-11:47:48.556 4044 Delete type=2 #46
+2024/12/11-11:47:48.556 4044 Delete type=2 #47
+2024/12/11-11:47:48.556 4044 Delete type=2 #48
+2024/12/11-11:47:48.556 4044 Delete type=2 #49
+2024/12/11-11:47:48.556 4044 Delete type=2 #50
+2024/12/11-11:47:48.556 4044 Delete type=2 #51

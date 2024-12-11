@@ -26,6 +26,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text('Bem-vindo ao BarberManager!'),
         titleTextStyle: TextStyle(color: Colors.white),
@@ -46,34 +47,13 @@ class HomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        'Meus Próximos Agendamentos',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                          color: Color.fromARGB(255, 0, 0, 0),
-                        ),
-                      ),
-                    RichText(
-            text: TextSpan(children: [
-              TextSpan(
-                  text: 'Ver todos',
+                const Text(
+                  'Meus Próximos Agendamentos',
                   style: TextStyle(
-                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Color.fromARGB(255, 0, 0, 0),
                   ),
-                  recognizer: TapGestureRecognizer()
-                    ..onTap = () {
-                      Navigator.push(
-                        context, 
-                        MaterialPageRoute(builder: (context) => AgendamentosUsuarioPage())
-                      );
-                    }),
-            ]),
-          ),
-                  ],
                 ),
                 const SizedBox(height: 10),
                 Card(
@@ -134,6 +114,35 @@ class HomePage extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return _buildBarberCard(barbers[index]);
                     },
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 16.0, horizontal: 0.0),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => AgendamentosUsuarioPage()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 18, 2, 66),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                    ),
+                    child: const SizedBox(
+                      width: double.infinity,
+                      height: 50,
+                      child: Center(
+                        child: Text(
+                          'MEUS AGENDAMENTOS',
+                          style: TextStyle(color: Colors.white, fontSize: 16),
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               ],

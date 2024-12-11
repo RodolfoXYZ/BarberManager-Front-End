@@ -2,7 +2,6 @@ import 'package:barbershop_app/views/ConfirmacaoAgendamento.dart';
 import 'package:flutter/material.dart';
 
 class PaymentPage extends StatefulWidget {
-  
   String? serviceLocation;
   late DateTime selectedDate;
   late String selectedTime;
@@ -15,6 +14,7 @@ class PaymentPage extends StatefulWidget {
     required this.selectedTime,
     required this.selectedServices,
   }) : super(key: key);
+
   @override
   _PaymentPageState createState() => _PaymentPageState();
 }
@@ -24,69 +24,79 @@ class _PaymentPageState extends State<PaymentPage> {
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 18, 2, 66),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back,
-              color: Colors.white), // Setinha branca
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
           onPressed: () {
-            Navigator.pop(context); // Ação de voltar
+            Navigator.pop(context);
           },
         ),
         title: const Text(
           'Formas de Pagamento',
-          style: TextStyle(color: Colors.white), // Cor branca para o título
+          style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
       ),
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              GestureDetector(
-                onTap: () {
-                  setState(() {
-                    selectedPaymentMethod =
-                        selectedPaymentMethod == 'PIX' ? null : 'PIX';
-                  });
-                },
-                child: PaymentOption(
-                  text: 'PIX',
-                  isSelected: selectedPaymentMethod == 'PIX',
+        child: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          selectedPaymentMethod =
+                              selectedPaymentMethod == 'PIX' ? null : 'PIX';
+                        });
+                      },
+                      child: PaymentOption(
+                        text: 'PIX',
+                        isSelected: selectedPaymentMethod == 'PIX',
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          selectedPaymentMethod =
+                              selectedPaymentMethod == 'Cartão de crédito'
+                                  ? null
+                                  : 'Cartão de crédito';
+                        });
+                      },
+                      child: PaymentOption(
+                        text: 'Cartão de crédito',
+                        isSelected:
+                            selectedPaymentMethod == 'Cartão de crédito',
+                      ),
+                    ),
+                    const SizedBox(height: 45),
+                  ],
                 ),
               ),
-              const SizedBox(height: 20),
-              GestureDetector(
-                onTap: () {
-                  setState(() {
-                    selectedPaymentMethod =
-                        selectedPaymentMethod == 'Cartão de crédito'
-                            ? null
-                            : 'Cartão de crédito';
-                  });
-                },
-                child: PaymentOption(
-                  text: 'Cartão de crédito',
-                  isSelected: selectedPaymentMethod == 'Cartão de crédito',
-                ),
-              ),
-              const Spacer(),
-              ElevatedButton(
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: ElevatedButton(
                 onPressed: selectedPaymentMethod != null
                     ? () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => ConfirmationPage(
-                                    selectedDate: widget.selectedDate,
-                                    selectedServices: widget.selectedServices,
-                                    selectedTime: widget.selectedTime,
-                                    serviceLocation: widget.serviceLocation,
-                                  )),
+                            builder: (context) => ConfirmationPage(
+                              selectedDate: widget.selectedDate,
+                              selectedServices: widget.selectedServices,
+                              selectedTime: widget.selectedTime,
+                              serviceLocation: widget.serviceLocation,
+                            ),
+                          ),
                         );
 
                         ScaffoldMessenger.of(context).showSnackBar(
@@ -114,8 +124,8 @@ class _PaymentPageState extends State<PaymentPage> {
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

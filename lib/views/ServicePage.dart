@@ -39,7 +39,7 @@ class _ServicePageState extends State<ServicePage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => AgendamentoPage(
+        builder: (context) => BarberListScreen(
           selectedServices: _selectedServices,
           serviceLocation: _serviceLocation,
         ),
@@ -105,7 +105,7 @@ class _ServicePageState extends State<ServicePage> {
                       children: [
                         RadioListTile<String>(
                           title: const Text('À Domicílio'),
-                          value: 'domicilio',
+                          value: 'À Domicílio',
                           groupValue: _serviceLocation,
                           onChanged: (value) {
                             setState(() {
@@ -115,7 +115,7 @@ class _ServicePageState extends State<ServicePage> {
                         ),
                         RadioListTile<String>(
                           title: const Text('Presencial'),
-                          value: 'presencial',
+                          value: 'Presencial',
                           groupValue: _serviceLocation,
                           onChanged: (value) {
                             setState(() {

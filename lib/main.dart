@@ -1,5 +1,4 @@
 import 'package:barbershop_app/views/LoadPage.dart';
-import 'package:barbershop_app/views/LoginPage.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
