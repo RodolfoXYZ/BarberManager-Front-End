@@ -1,17 +1,19 @@
-import 'package:barbershop_app/views/homepage.dart';
 import 'package:flutter/material.dart';
+import 'homepage.dart';
 
 class ConfirmationPage extends StatelessWidget {
   final DateTime selectedDate;
   final String selectedTime;
   final Map<String, bool> selectedServices;
   final String? serviceLocation;
+  final Map<String, String> selectedBarber;
 
   ConfirmationPage({
     required this.selectedDate,
     required this.selectedTime,
     required this.selectedServices,
     required this.serviceLocation,
+    required this.selectedBarber,
   });
 
   @override
@@ -112,6 +114,58 @@ class ConfirmationPage extends StatelessWidget {
                         Text(
                           'Local: ${serviceLocation ?? 'Não especificado'}',
                           style: TextStyle(fontSize: 16),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  
+                  Container(
+                    padding: const EdgeInsets.all(16.0),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(12.0),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade300,
+                          blurRadius: 6.0,
+                          offset: const Offset(0, 4),
+                        ),
+                      ],
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 60,
+                              height: 90,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                image: DecorationImage(
+                                  image: AssetImage(selectedBarber['image']!),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                            const SizedBox(width: 16),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  selectedBarber['name']!,
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16),
+                                ),
+                                const SizedBox(height: 4),
+                                Text(
+                                  selectedBarber['courses']!,
+                                  style: TextStyle(fontSize: 14),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ],
                     ),
