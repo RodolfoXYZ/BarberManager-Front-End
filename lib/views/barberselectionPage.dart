@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'agendamento.dart';
-import 'FormaDePagamento.dart'; 
+import 'package:barbershop_app/views/agendamento.dart';
+import 'package:barbershop_app/views/FormaDePagamento.dart'; 
 
 class BarberListScreen extends StatefulWidget {
   final Map<String, bool> selectedServices;
