@@ -1,5 +1,6 @@
 import 'package:barbershop_app/views/FormaDePagamento.dart';
 import 'package:flutter/material.dart';
+import 'package:barbershop_app/views/ConfirmacaoAgendamento.dart';
 
 class AgendamentoPage extends StatefulWidget {
   final Map<String, bool> selectedServices;
