@@ -112,7 +112,7 @@ class HomePage extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemCount: barbers.length,
                     itemBuilder: (context, index) {
-                      return _buildBarberCard(barbers[index]);
+                      return _buildBarberCard(barbers[index], context);
                     },
                   ),
                 ),
@@ -177,46 +177,58 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Widget _buildBarberCard(Map<String, String> barber) {
-    return Card(
-      margin: const EdgeInsets.only(right: 10),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      child: Container(
-        width: 120,
-        padding: const EdgeInsets.all(10),
-        child: Column(
-          children: [
-            Container(
-              height: 60,
-              width: 60,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-                image: DecorationImage(
-                  image: AssetImage(barber['image']!),
-                  fit: BoxFit.cover,
+  // Modificado para navegação e para o estado do cartão
+  Widget _buildBarberCard(Map<String, String> barber, BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) =>
+                ServicePage(), // Navegar para a tela de serviços
+          ),
+        );
+      },
+      child: Card(
+        margin: const EdgeInsets.only(right: 10),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        child: Container(
+          width: 120,
+          padding: const EdgeInsets.all(10),
+          child: Column(
+            children: [
+              Container(
+                height: 60,
+                width: 60,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  image: DecorationImage(
+                    image: AssetImage(barber['image']!),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 10),
-            Text(
-              barber['name']!,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 14,
-                color: Color(0xFF120242),
+              const SizedBox(height: 10),
+              Text(
+                barber['name']!,
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14,
+                  color: Color(0xFF120242),
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 5),
-            Text(
-              barber['courses']!,
-              style: TextStyle(
-                fontSize: 12,
-                color: Colors.grey[600],
+              const SizedBox(height: 5),
+              Text(
+                barber['courses']!,
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey[600],
+                ),
+                textAlign: TextAlign.center,
               ),
-              textAlign: TextAlign.center,
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
