@@ -1,5 +1,5 @@
-import 'package:barbershop_app/views/agendamento.dart';
 import 'package:flutter/material.dart';
+import 'agendamento.dart';
 
 class BarberListScreen extends StatefulWidget {
   final Map<String, bool> selectedServices;
@@ -19,27 +19,27 @@ class _BarberListScreenState extends State<BarberListScreen> {
     {
       'name': 'João Silva',
       'image': 'assets/barber1.png',
-      'courses': 'Curso Profissional de Barbeiro, Design de Barba'
+      'courses': 'Curso Prof. Barbeiro'
     },
     {
       'name': 'Carlos Pereira',
       'image': 'assets/barber2.png',
-      'courses': 'Corte Clássico, Alisamento Masculino'
+      'courses': 'Corte Clássico'
     },
     {
       'name': 'Gabriel Lemos',
       'image': 'assets/barber3.png',
-      'courses': 'Técnicas Modernas de Corte, Barboterapia'
+      'courses': 'Técnicas Mod.'
     },
     {
       'name': 'Lucas Oliveira',
       'image': 'assets/barber4.png',
-      'courses': 'Cortes Degradê, Barba Italiana'
+      'courses': 'Cortes Degradê'
     },
     {
       'name': 'Marcos Lima',
       'image': 'assets/barber5.png',
-      'courses': 'Estilo Afro, Desenho Capilar'
+      'courses': 'Estilo Afro'
     },
   ];
 
@@ -51,7 +51,9 @@ class _BarberListScreenState extends State<BarberListScreen> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
-          'Barbeiros a Domicílio',
+          widget.serviceLocation == 'À Domicílio'
+              ? 'Barbeiros a Domicílio'
+              : 'Barbeiros Presenciais',
           style: TextStyle(color: Colors.white),
         ),
         backgroundColor: const Color(0xFF120242),
@@ -81,16 +83,29 @@ class _BarberListScreenState extends State<BarberListScreen> {
             child: ElevatedButton(
               onPressed: selectedBarberIndex != null
                   ? () {
+                      String barberName =
+                          barbers[selectedBarberIndex!]['name']!;
+                      String barberImage =
+                          barbers[selectedBarberIndex!]['image']!;
+                      String barberCourses =
+                          barbers[selectedBarberIndex!]['courses']!;
+
+                      // Navegar para a tela de agendamento
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => AgendamentoPage(
-                                  selectedServices: widget.selectedServices,
-                                  serviceLocation: widget.serviceLocation,
-                                )),
+                          builder: (context) => AgendamentoPage(
+                            selectedServices: widget.selectedServices,
+                            serviceLocation: widget.serviceLocation,
+                            selectedBarber: {
+                              'name': barberName,
+                              'image': barberImage,
+                              'courses': barberCourses,
+                            },
+                          ),
+                        ),
                       );
-                      String barberName =
-                          barbers[selectedBarberIndex!]['name']!;
+
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content:

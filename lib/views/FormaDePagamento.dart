@@ -2,17 +2,19 @@ import 'package:barbershop_app/views/ConfirmacaoAgendamento.dart';
 import 'package:flutter/material.dart';
 
 class PaymentPage extends StatefulWidget {
-  String? serviceLocation;
-  late DateTime selectedDate;
-  late String selectedTime;
-  late Map<String, bool> selectedServices;
+  final Map<String, bool> selectedServices;
+  final String? serviceLocation;
+  final DateTime selectedDate;
+  final String selectedTime;
+  final Map<String, String> selectedBarber; 
 
   PaymentPage({
     Key? key,
-    this.serviceLocation,
+    required this.selectedServices,
     required this.selectedDate,
     required this.selectedTime,
-    required this.selectedServices,
+    required this.selectedBarber, 
+    this.serviceLocation,
   }) : super(key: key);
 
   @override
@@ -92,13 +94,14 @@ class _PaymentPageState extends State<PaymentPage> {
                           MaterialPageRoute(
                             builder: (context) => ConfirmationPage(
                               selectedDate: widget.selectedDate,
-                              selectedServices: widget.selectedServices,
                               selectedTime: widget.selectedTime,
+                              selectedServices: widget.selectedServices,
                               serviceLocation: widget.serviceLocation,
+                              selectedBarber: widget
+                                  .selectedBarber, 
                             ),
                           ),
                         );
-
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text(
