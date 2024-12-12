@@ -47,6 +47,12 @@ class _AgendamentosUsuarioPageState extends State<AgendamentosUsuarioPage> {
         titleTextStyle: TextStyle(color: Colors.white),
         centerTitle: true,
         backgroundColor: const Color(0xFF120242),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
       body: Column(
         children: [

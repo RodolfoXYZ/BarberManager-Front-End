@@ -107,8 +107,10 @@ class HomePage extends StatelessWidget {
                 ),
                 const SizedBox(height: 10),
                 SizedBox(
-                  height: 200,
+                  height: 250,
                   child: ListView.builder(
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 16.0, horizontal: 0.0),
                     scrollDirection: Axis.horizontal,
                     itemCount: barbers.length,
                     itemBuilder: (context, index) {
@@ -189,9 +191,19 @@ class HomePage extends StatelessWidget {
           ),
         );
       },
-      child: Card(
+      child: Container(
         margin: const EdgeInsets.only(right: 10),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(12.0),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade300,
+              blurRadius: 6.0,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
         child: Container(
           width: 120,
           padding: const EdgeInsets.all(10),
