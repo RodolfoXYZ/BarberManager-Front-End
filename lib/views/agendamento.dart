@@ -21,10 +21,11 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
   String? _selectedTime;
 
   void _pickDate(BuildContext context) async {
+    final DateTime now = DateTime.now();
     final DateTime? pickedDate = await showDatePicker(
       context: context,
-      initialDate: DateTime.now(),
-      firstDate: DateTime(2000),
+      initialDate: now,
+      firstDate: now,
       lastDate: DateTime(2100),
     );
 

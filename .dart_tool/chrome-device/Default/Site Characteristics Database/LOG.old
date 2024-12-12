@@ -1,47 +1,19 @@
-2024/12/11-11:47:47.805 3ce8 Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.8d1e69a0\flutter_tools_chrome_device.b30995ce\Default\Site Characteristics Database/MANIFEST-000001
-2024/12/11-11:47:47.840 3ce8 Recovering log #3
-2024/12/11-11:47:47.841 3ce8 Level-0 table #46: started
-2024/12/11-11:47:48.171 3ce8 Level-0 table #46: 288 bytes OK
-2024/12/11-11:47:48.213 3ce8 Recovering log #6
-2024/12/11-11:47:48.213 3ce8 Level-0 table #47: started
-2024/12/11-11:47:48.320 3ce8 Level-0 table #47: 1157 bytes OK
-2024/12/11-11:47:48.320 3ce8 Recovering log #10
-2024/12/11-11:47:48.320 3ce8 Level-0 table #48: started
-2024/12/11-11:47:48.436 3ce8 Level-0 table #48: 489 bytes OK
-2024/12/11-11:47:48.436 3ce8 Recovering log #19
-2024/12/11-11:47:48.436 3ce8 Level-0 table #49: started
-2024/12/11-11:47:48.460 3ce8 Level-0 table #49: 165 bytes OK
-2024/12/11-11:47:48.460 3ce8 Recovering log #26
-2024/12/11-11:47:48.460 3ce8 Level-0 table #50: started
-2024/12/11-11:47:48.485 3ce8 Level-0 table #50: 165 bytes OK
-2024/12/11-11:47:48.485 3ce8 Recovering log #34
-2024/12/11-11:47:48.485 3ce8 Level-0 table #51: started
-2024/12/11-11:47:48.508 3ce8 Level-0 table #51: 165 bytes OK
-2024/12/11-11:47:48.508 3ce8 Recovering log #43
-2024/12/11-11:47:48.508 3ce8 Reusing old log C:\Users\Lucas\AppData\Local\Temp\flutter_tools.8d1e69a0\flutter_tools_chrome_device.b30995ce\Default\Site Characteristics Database/000043.log 
-2024/12/11-11:47:48.523 3ce8 Delete type=0 #3
-2024/12/11-11:47:48.523 3ce8 Delete type=2 #4
-2024/12/11-11:47:48.523 3ce8 Delete type=2 #6
-2024/12/11-11:47:48.523 3ce8 Delete type=0 #6
-2024/12/11-11:47:48.523 3ce8 Delete type=0 #10
-2024/12/11-11:47:48.523 3ce8 Delete type=2 #11
-2024/12/11-11:47:48.523 3ce8 Delete type=2 #13
-2024/12/11-11:47:48.523 3ce8 Delete type=2 #14
-2024/12/11-11:47:48.523 3ce8 Delete type=0 #19
-2024/12/11-11:47:48.523 3ce8 Delete type=2 #20
-2024/12/11-11:47:48.523 3ce8 Delete type=0 #26
-2024/12/11-11:47:48.523 3ce8 Delete type=2 #27
-2024/12/11-11:47:48.523 3ce8 Delete type=2 #33
-2024/12/11-11:47:48.523 3ce8 Delete type=0 #34
-2024/12/11-11:47:48.523 3ce8 Delete type=2 #35
-2024/12/11-11:47:48.525 4044 Compacting 6@0 + 1@1 files
-2024/12/11-11:47:48.546 4044 Generated table #52@0: 2 keys, 194 bytes
-2024/12/11-11:47:48.546 4044 Compacted 6@0 + 1@1 files => 194 bytes
-2024/12/11-11:47:48.556 4044 compacted to: files[ 0 1 0 0 0 0 0 ]
-2024/12/11-11:47:48.556 4044 Delete type=2 #44
-2024/12/11-11:47:48.556 4044 Delete type=2 #46
-2024/12/11-11:47:48.556 4044 Delete type=2 #47
-2024/12/11-11:47:48.556 4044 Delete type=2 #48
-2024/12/11-11:47:48.556 4044 Delete type=2 #49
-2024/12/11-11:47:48.556 4044 Delete type=2 #50
-2024/12/11-11:47:48.556 4044 Delete type=2 #51
+2024/12/11-13:47:17.707 ac8 Reusing MANIFEST C:\Users\Lucas\AppData\Local\Temp\flutter_tools.da00e642\flutter_tools_chrome_device.4b480375\Default\Site Characteristics Database/MANIFEST-000001
+2024/12/11-13:47:17.708 ac8 Recovering log #43
+2024/12/11-13:47:17.709 ac8 Reusing old log C:\Users\Lucas\AppData\Local\Temp\flutter_tools.da00e642\flutter_tools_chrome_device.4b480375\Default\Site Characteristics Database/000043.log 
+2024/12/11-13:47:17.709 ac8 Delete type=0 #3
+2024/12/11-13:47:17.709 ac8 Delete type=2 #4
+2024/12/11-13:47:17.709 ac8 Delete type=2 #6
+2024/12/11-13:47:17.709 ac8 Delete type=0 #6
+2024/12/11-13:47:17.709 ac8 Delete type=0 #10
+2024/12/11-13:47:17.709 ac8 Delete type=2 #11
+2024/12/11-13:47:17.710 ac8 Delete type=2 #13
+2024/12/11-13:47:17.711 ac8 Delete type=2 #14
+2024/12/11-13:47:17.711 ac8 Delete type=0 #19
+2024/12/11-13:47:17.711 ac8 Delete type=2 #20
+2024/12/11-13:47:17.711 ac8 Delete type=0 #26
+2024/12/11-13:47:17.711 ac8 Delete type=2 #27
+2024/12/11-13:47:17.711 ac8 Delete type=2 #33
+2024/12/11-13:47:17.712 ac8 Delete type=0 #34
+2024/12/11-13:47:17.712 ac8 Delete type=2 #35
+2024/12/11-13:47:17.712 ac8 Delete type=2 #44
