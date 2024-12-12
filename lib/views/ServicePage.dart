@@ -15,7 +15,9 @@ class _ServicePageState extends State<ServicePage> {
   };
   String? _serviceLocation;
 
+  // Função chamada quando o botão "CONFIRMAR" é pressionado
   void _onContinuePressed() {
+    // Verifica se pelo menos um serviço foi selecionado
     if (_selectedServices.values.every((isSelected) => !isSelected)) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -26,6 +28,7 @@ class _ServicePageState extends State<ServicePage> {
       return;
     }
 
+    // Verifica se o local de serviço foi selecionado
     if (_serviceLocation == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -36,12 +39,14 @@ class _ServicePageState extends State<ServicePage> {
       return;
     }
 
+    // Navega para a BarberListScreen passando os dados selecionados
     Navigator.push(
       context,
       MaterialPageRoute(
         builder: (context) => BarberListScreen(
-          selectedServices: _selectedServices,
-          serviceLocation: _serviceLocation,
+          selectedServices:
+              _selectedServices, // Passando os serviços selecionados
+          serviceLocation: _serviceLocation, // Passando o local do serviço
         ),
       ),
     );
@@ -157,6 +162,7 @@ class _ServicePageState extends State<ServicePage> {
     );
   }
 
+  // Função auxiliar para construir as seções (serviço e local)
   Widget _buildSection({required String title, required Widget content}) {
     return Container(
       padding: const EdgeInsets.all(16.0),
@@ -187,3 +193,4 @@ class _ServicePageState extends State<ServicePage> {
     );
   }
 }
+
