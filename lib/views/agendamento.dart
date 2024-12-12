@@ -21,11 +21,10 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
   String? _selectedTime;
 
   void _pickDate(BuildContext context) async {
-    final DateTime now = DateTime.now();
     final DateTime? pickedDate = await showDatePicker(
       context: context,
-      initialDate: now,
-      firstDate: now,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2000),
       lastDate: DateTime(2100),
     );
 
@@ -48,7 +47,6 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
 
   @override
   Widget build(BuildContext context) {
-    // Usando os dados passados da BarberSelectionPage
     final selectedBarber = widget.selectedBarber;
 
     return Scaffold(
@@ -69,6 +67,7 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
+        // Já garante que o conteúdo será rolável
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
@@ -101,6 +100,68 @@ class _AgendamentoPageState extends State<AgendamentoPage> {
                   Text(
                     'Local de Serviço: ${widget.serviceLocation ?? 'Não especificado'}',
                     style: TextStyle(fontSize: 14),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 20),
+
+            // Seção para exibir o barbeiro selecionado
+            Container(
+              padding: const EdgeInsets.all(16.0),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12.0),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.shade300,
+                    blurRadius: 6.0,
+                    offset: const Offset(0, 4),
+                  ),
+                ],
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(
+                    'Barbeiro Selecionado:',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    children: [
+                      // Exibindo a imagem do barbeiro com tamanho ajustado
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: Image.asset(
+                          selectedBarber['image']!,
+                          width: 60,
+                          height: 90,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      // Exibindo nome e curso do barbeiro
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              selectedBarber['name']!,
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: const Color(0xFF120242),
+                              ),
+                            ),
+                            SizedBox(height: 5),
+                            Text(
+                              selectedBarber['courses']!,
+                              style: TextStyle(color: Colors.grey[700]),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
