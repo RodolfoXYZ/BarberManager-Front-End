@@ -1,6 +1,6 @@
+import 'package:barbershop_app/services/localstorage-service.dart';
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
-import 'LoginPage.dart';
 
 class LoadPage extends StatefulWidget {
   @override
@@ -8,16 +8,20 @@ class LoadPage extends StatefulWidget {
 }
 
 class _LoadPageState extends State<LoadPage> {
+  var storage = LocalStorageService();
   @override
   void initState() {
     super.initState();
-
+    Future.delayed(Duration.zero, () async {
+    final token = await storage.getItem("access_token");
     Future.delayed(Duration(seconds: 5), () {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => LoginPage()),
-      );
+      if (token == null) {
+        Navigator.pushReplacementNamed(context, 'login');
+      } else {
+        Navigator.pushReplacementNamed(context, 'home');
+      }
     });
+  });
   }
 
   Widget build(BuildContext context) {

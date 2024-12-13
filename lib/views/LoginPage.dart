@@ -1,3 +1,7 @@
+import 'package:barbershop_app/factories/UserFactoryService.dart';
+import 'package:barbershop_app/services/api-connection.dart';
+import 'package:barbershop_app/services/localstorage-service.dart';
+import 'package:barbershop_app/services/user-service.dart';
 import 'package:barbershop_app/views/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
@@ -6,33 +10,20 @@ import 'CadastroPage.dart';
 class LoginPage extends StatelessWidget {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController senhaController = TextEditingController();
+  final storage = LocalStorageService();
 
   void fazerLogin(BuildContext context) async {
-    try {
-      if (emailController.text.isEmpty || senhaController.text.isEmpty) {
-        mostrarSnackBar(context, 'Por favor, preencha usuário e senha');
-        return;
-      }
-
-      var user = true;
-
-      if (user) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => HomePage()),
-        );
-
-        mostrarSnackBar(context, 'Login efetuado com sucesso!');
-      } else {
-        mostrarSnackBar(context,
-            'E-mail e/ou senha incorretos. Favor, revise os dados e tente novamente!');
-      }
+    try{
+      var result = await userFactoryService.login(emailController.text, senhaController.text);
+      storage.saveItem(result, "access_token");
+      Navigator.pushNamed(context, "home");
     } catch (error) {
-      mostrarSnackBar(context, 'Erro ao tentar fazer login. Tente novamente!');
+      print(error);
+      showSnackBar(context, "Ocorreu um erro ao fazer login tente novamente");
     }
   }
 
-  void mostrarSnackBar(BuildContext context, String mensagem) {
+  void showSnackBar(BuildContext context, String mensagem) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(mensagem),
