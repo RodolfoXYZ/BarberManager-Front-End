@@ -1,4 +1,5 @@
 import 'package:barbershop_app/views/LoadPage.dart';
+import 'package:barbershop_app/views/PesquisaTipoPage.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoadPage(),
+      home: PesquisaTipoPage(),
     );
   }
 }
