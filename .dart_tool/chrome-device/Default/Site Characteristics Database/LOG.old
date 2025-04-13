@@ -1,22 +1,64 @@
-2024/12/13-19:31:45.982 2668 Reusing MANIFEST C:\Users\anthc\AppData\Local\Temp\flutter_tools.308bb9d0\flutter_tools_chrome_device.83a33198\Default\Site Characteristics Database/MANIFEST-000001
-2024/12/13-19:31:45.984 2668 Recovering log #61
-2024/12/13-19:31:45.985 2668 Reusing old log C:\Users\anthc\AppData\Local\Temp\flutter_tools.308bb9d0\flutter_tools_chrome_device.83a33198\Default\Site Characteristics Database/000061.log 
-2024/12/13-19:31:45.986 2668 Delete type=0 #3
-2024/12/13-19:31:45.987 2668 Delete type=2 #4
-2024/12/13-19:31:45.987 2668 Delete type=2 #6
-2024/12/13-19:31:45.987 2668 Delete type=0 #6
-2024/12/13-19:31:45.987 2668 Delete type=0 #10
-2024/12/13-19:31:45.987 2668 Delete type=2 #11
-2024/12/13-19:31:45.987 2668 Delete type=2 #13
-2024/12/13-19:31:45.988 2668 Delete type=2 #14
-2024/12/13-19:31:45.988 2668 Delete type=0 #19
-2024/12/13-19:31:45.988 2668 Delete type=2 #20
-2024/12/13-19:31:45.988 2668 Delete type=0 #26
-2024/12/13-19:31:45.988 2668 Delete type=2 #27
-2024/12/13-19:31:45.988 2668 Delete type=2 #33
-2024/12/13-19:31:45.988 2668 Delete type=0 #34
-2024/12/13-19:31:45.988 2668 Delete type=2 #35
-2024/12/13-19:31:45.988 2668 Delete type=0 #43
-2024/12/13-19:31:45.988 2668 Delete type=2 #44
-2024/12/13-19:31:45.988 2668 Delete type=2 #52
-2024/12/13-19:31:45.989 2668 Delete type=2 #62
+2025/04/13-17:12:47.997 4490 Reusing MANIFEST C:\Users\monte\AppData\Local\Temp\flutter_tools.38d3c92\flutter_tools_chrome_device.f9a386e1\Default\Site Characteristics Database/MANIFEST-000001
+2025/04/13-17:12:48.008 4490 Recovering log #3
+2025/04/13-17:12:48.008 4490 Level-0 table #84: started
+2025/04/13-17:12:48.014 4490 Level-0 table #84: 290 bytes OK
+2025/04/13-17:12:48.014 4490 Recovering log #6
+2025/04/13-17:12:48.015 4490 Level-0 table #85: started
+2025/04/13-17:12:48.017 4490 Level-0 table #85: 1157 bytes OK
+2025/04/13-17:12:48.018 4490 Recovering log #10
+2025/04/13-17:12:48.018 4490 Level-0 table #86: started
+2025/04/13-17:12:48.023 4490 Level-0 table #86: 493 bytes OK
+2025/04/13-17:12:48.023 4490 Recovering log #19
+2025/04/13-17:12:48.024 4490 Level-0 table #87: started
+2025/04/13-17:12:48.031 4490 Level-0 table #87: 165 bytes OK
+2025/04/13-17:12:48.032 4490 Recovering log #26
+2025/04/13-17:12:48.032 4490 Level-0 table #88: started
+2025/04/13-17:12:48.037 4490 Level-0 table #88: 165 bytes OK
+2025/04/13-17:12:48.037 4490 Recovering log #34
+2025/04/13-17:12:48.038 4490 Level-0 table #89: started
+2025/04/13-17:12:48.042 4490 Level-0 table #89: 165 bytes OK
+2025/04/13-17:12:48.043 4490 Recovering log #43
+2025/04/13-17:12:48.043 4490 Level-0 table #90: started
+2025/04/13-17:12:48.047 4490 Level-0 table #90: 261 bytes OK
+2025/04/13-17:12:48.047 4490 Recovering log #61
+2025/04/13-17:12:48.047 4490 Level-0 table #91: started
+2025/04/13-17:12:48.052 4490 Level-0 table #91: 572 bytes OK
+2025/04/13-17:12:48.054 4490 Recovering log #81
+2025/04/13-17:12:48.054 4490 Reusing old log C:\Users\monte\AppData\Local\Temp\flutter_tools.38d3c92\flutter_tools_chrome_device.f9a386e1\Default\Site Characteristics Database/000081.log 
+2025/04/13-17:12:48.060 4490 Delete type=0 #3
+2025/04/13-17:12:48.060 4490 Delete type=2 #4
+2025/04/13-17:12:48.061 4490 Delete type=2 #6
+2025/04/13-17:12:48.061 4490 Delete type=0 #6
+2025/04/13-17:12:48.061 4490 Delete type=0 #10
+2025/04/13-17:12:48.061 4490 Delete type=2 #11
+2025/04/13-17:12:48.061 4490 Delete type=2 #13
+2025/04/13-17:12:48.061 4490 Delete type=2 #14
+2025/04/13-17:12:48.061 4490 Delete type=0 #19
+2025/04/13-17:12:48.061 4490 Delete type=2 #20
+2025/04/13-17:12:48.061 4490 Delete type=2 #22
+2025/04/13-17:12:48.061 4490 Delete type=2 #23
+2025/04/13-17:12:48.061 4490 Delete type=2 #24
+2025/04/13-17:12:48.062 4490 Delete type=0 #26
+2025/04/13-17:12:48.062 4490 Delete type=2 #27
+2025/04/13-17:12:48.062 4490 Delete type=2 #33
+2025/04/13-17:12:48.062 4490 Delete type=0 #34
+2025/04/13-17:12:48.062 4490 Delete type=2 #35
+2025/04/13-17:12:48.062 4490 Delete type=0 #43
+2025/04/13-17:12:48.062 4490 Delete type=2 #44
+2025/04/13-17:12:48.062 4490 Delete type=2 #52
+2025/04/13-17:12:48.062 4490 Delete type=0 #61
+2025/04/13-17:12:48.063 4490 Delete type=2 #62
+2025/04/13-17:12:48.063 4490 Delete type=2 #71
+2025/04/13-17:12:48.071 49c8 Compacting 8@0 + 1@1 files
+2025/04/13-17:12:48.076 49c8 Generated table #92@0: 3 keys, 259 bytes
+2025/04/13-17:12:48.076 49c8 Compacted 8@0 + 1@1 files => 259 bytes
+2025/04/13-17:12:48.077 49c8 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/04/13-17:12:48.078 49c8 Delete type=2 #82
+2025/04/13-17:12:48.078 49c8 Delete type=2 #84
+2025/04/13-17:12:48.078 49c8 Delete type=2 #85
+2025/04/13-17:12:48.079 49c8 Delete type=2 #86
+2025/04/13-17:12:48.080 49c8 Delete type=2 #87
+2025/04/13-17:12:48.080 49c8 Delete type=2 #88
+2025/04/13-17:12:48.080 49c8 Delete type=2 #89
+2025/04/13-17:12:48.080 49c8 Delete type=2 #90
+2025/04/13-17:12:48.080 49c8 Delete type=2 #91
